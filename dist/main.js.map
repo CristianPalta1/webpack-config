@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":"mBAGAA,QAAQC,IAAI,S","sources":["webpack://webpack/./src/index.js"],"sourcesContent":["import './scss/main.scss';\r\n// import img from './assets/img/facebook.png';\r\n\r\nconsole.log(\"Hola\");\r\n"],"names":["console","log"],"sourceRoot":""}

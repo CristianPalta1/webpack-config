@@ -1,0 +1,80 @@
+// Media Queries
+@mixin media-query($media-query) {
+    @if $media-query == mobilex {
+        @media only screen and (max-width: $mobilex) {
+            @content;
+        }
+    }
+    @if $media-query == mobilexl {
+        @media only screen and (max-width: $mobilexl) {
+            @content;
+        }
+    }
+    @if $media-query == mobile {
+        @media only screen and (max-width: $mobile) {
+            @content;
+        }
+    }
+    @if $media-query == tablet {
+        @media only screen and (max-width: $tablet) {
+            @content;
+        }
+    }
+    @if $media-query == mintablet {
+        @media only screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+    @if $media-query == desktop {
+        @media only screen and (max-width: $desktop) {
+            @content;
+        }
+    }
+    @if $media-query == desktopL {
+        @media only screen and (max-width: $desktopL) {
+            @content;
+        }
+    }
+    @if $media-query == mindesktopL {
+        @media only screen and (min-width: $desktopL) {
+            @content;
+        }
+    }
+    @if $media-query == desktopLS {
+        @media only screen and (max-width: $desktopLS) {
+            @content;
+        }
+    }
+    @if $media-query == mindesktopLS {
+        @media only screen and (min-width: $desktopLS) {
+            @content;
+        }
+    }
+    @if $media-query == desktopXL {
+        @media only screen and (max-width: $desktopXL) {
+            @content;
+        }
+    }
+    @if $media-query == mindesktopXL {
+        @media only screen and (min-width: $desktopXL) {
+            @content;
+        }
+    }
+}
+
+///Animaciones
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
